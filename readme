@@ -1,0 +1,47 @@
+1.database
+
+table: Users
+--------------------------------
+ID	GUID		主键
+Name	字符串50		用户名
+Pwd		字符串50		密码
+CreateTime	时间		创建日期
+
+
+table: MyContent
+--------------------------------
+ID	GUID	主键
+Title	字符串200	标题
+Context	字符串8000	内容
+CreateTime	时间		创建时间
+UserID	GUID		用户ID
+
+
+table: MessageBoard
+--------------------------------
+ID	GUID	主键
+Title	字符串200	标题
+Context	字符串8000	内容
+CreateTime	时间		创建时间
+Author	字符串50     作者
+IPAddress	字符串50  ip地址
+
+
+table: ReplyList
+--------------------------------
+ID	GUID	主键
+ContextID	GUID    文章ID
+ParentID	GUID	针对上一个回复ID
+Sequence	整数		回复序号
+Context	字符串8000	内容
+CreateTime	时间		创建时间
+UserID	GUID		用户ID
+
+
+table: ConfigInfo
+--------------------------------
+ID	GUID	主键
+Name  字符串200	配置名称
+Value	字符串800	配置值
+Type   字符串200		配置类型
+	

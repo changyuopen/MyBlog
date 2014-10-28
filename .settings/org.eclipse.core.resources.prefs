@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//DataAccess/ConfigInfoRepository.py=utf-8
+encoding//DataAccess/Core/DBHelper.py=utf-8
+encoding//DataAccess/Core/DBInfo.py=utf-8
+encoding//DataAccess/Core/DBManager.py=utf-8
+encoding//DataAccess/test.py=utf-8
+encoding//Domain/ConfigInfo.py=utf-8
+encoding//UnitTest/TestCaseOne.py=utf-8
+encoding//View/Index.py=utf-8
+encoding/Run.py=utf-8
