@@ -17,7 +17,7 @@ class ConfigInfoRepository:
         for row in result:
             tmp = ConfigInfo(row["ID"], row["Name"], row["Value"], row["Type"])
             items.append(tmp)
-        return list
+        return items
     
     def updateConfigInfo(self, configInfo):
         sql = """update configinfo set Name = %s, Value = %s, Type = %s

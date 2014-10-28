@@ -3,5 +3,7 @@
 from ConfigInfoRepository import ConfigInfoRepository
 
 obj = ConfigInfoRepository()
-obj.getAllConfigInfo()
+items = obj.getAllConfigInfo()
+for item in items:
+    print item.getName()
 
