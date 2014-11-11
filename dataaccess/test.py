@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from ConfigInfoRepository import ConfigInfoRepository
+from dataaccess import configinfo
 
-obj = ConfigInfoRepository()
+obj = configinfo()
 items = obj.getAllConfigInfo()
 for item in items:
     print item.getName()

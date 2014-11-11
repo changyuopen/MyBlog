@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 
 # from flask import Flask
-# from View.Index import *
+# from view.index import *
 
 # app = Flask(__name__)
 
 
 # if __name__ == '__main__':
 #    app.run()
-from DataAccess import *
+from dataaccess import *
 import MySQLdb
 
-db = MySQLdb.connect(host=DBInfo.Server, user=DBInfo.User, passwd='', db='MyBlog', charset='utf8') 
+db = MySQLdb.connect(host=DBInfo.Server, user=DBInfo.User, passwd='', 
+                     db='MyBlog', charset='utf8') 
 
 cursor = db.cursor()
 sql = """insert into configinfo (ID, Name, Value, Type)

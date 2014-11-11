@@ -5,14 +5,14 @@ Created on 2014年10月25日
 
 @author: changyuopen
 '''
-from Core.DBHelper import DBHelper
-from Domain.ConfigInfo import ConfigInfo
+from dataaccess.core import dbhelper
+from domain.configinfo import ConfigInfo
     
 class ConfigInfoRepository:
     
     def getAllConfigInfo(self):
         sql = "select * from configinfo;"
-        result = DBHelper.select(sql)
+        result = dbhelper.select(sql)
         items = []
         for row in result:
             tmp = ConfigInfo(row["ID"], row["Name"], row["Value"], row["Type"])
@@ -24,7 +24,7 @@ class ConfigInfoRepository:
 where ID=%s """
         param = (configInfo.getName(), configInfo.getValue(), configInfo.getType(),
                  configInfo.getId())
-        count = DBHelper.execute(sql, param)
+        count = dbhelper.execute(sql, param)
         return count
         
 

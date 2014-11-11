@@ -5,7 +5,7 @@ Created on 2014???10???27???
 
 @author: changyuopen
 '''
-from DataAccess.ConfigInfoRepository import ConfigInfoRepository
+from dataaccess import configinfo.ConfigInfoRepository
 import unittest
 
 
@@ -13,7 +13,7 @@ import unittest
 class TestSequenceFunctions(unittest.TestCase):
     
     def setUp(self):
-        self.confgiInfoRepo = ConfigInfoRepository()
+        self.confgiInfoRepo = configinfo()
         
     def test_shuffle(self):       
         items = self.confgiInfoRepo.getAllConfigInfo()
